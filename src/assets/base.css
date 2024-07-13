@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --bg-color: #111315;
+  --bg-color-card: #1b1d1f;
+  --bg-color-price: #bee3cc;
+  --color-label-card: #fdf5e6;
+}
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html,
+body {
+  background-color: var(--bg-color);
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
