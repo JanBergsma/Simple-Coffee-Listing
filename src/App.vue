@@ -1,11 +1,9 @@
-<script setup>
-import CoffeeCard from './components/CoffeeCard.vue'
-</script>
+<script setup></script>
 
 <template>
   <main>
     <h1>hello</h1>
-    <CoffeeCard />
+    <!-- <CoffeeCard /> -->
   </main>
 </template>
 

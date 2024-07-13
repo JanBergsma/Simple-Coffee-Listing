@@ -43,8 +43,8 @@ const coffeeBlends = [
     price: '$5.50',
     rating: null,
     votes: 0,
-    popular: true,
-    available: false
+    popular: false,
+    available: true
   }
 ]
 
@@ -63,6 +63,48 @@ export const CoffeeCardAvailablePopular = {
   }),
   args: {
     coffee: coffeeBlends[0],
+    label: 'CoffeeCard'
+  }
+}
+
+export const CoffeeCardAvailableNotPopular = {
+  render: (args) => ({
+    components: { CoffeeCard },
+    setup() {
+      return { args }
+    },
+    template: '<CoffeeCard v-bind="args" />'
+  }),
+  args: {
+    coffee: coffeeBlends[1],
+    label: 'CoffeeCard'
+  }
+}
+
+export const CoffeeCardNotAvailableNotPopular = {
+  render: (args) => ({
+    components: { CoffeeCard },
+    setup() {
+      return { args }
+    },
+    template: '<CoffeeCard v-bind="args" />'
+  }),
+  args: {
+    coffee: coffeeBlends[2],
+    label: 'CoffeeCard'
+  }
+}
+
+export const CoffeeCardAvailableNotPopularNoRating = {
+  render: (args) => ({
+    components: { CoffeeCard },
+    setup() {
+      return { args }
+    },
+    template: '<CoffeeCard v-bind="args" />'
+  }),
+  args: {
+    coffee: coffeeBlends[3],
     label: 'CoffeeCard'
   }
 }
