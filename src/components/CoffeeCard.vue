@@ -1,7 +1,8 @@
 <template>
   <article>
-    <div v-if="popular" class="popular">Popular</div>
-    <img :src="image" alt="" />
+    <div class="image-contaner">
+      <div v-if="popular" class="popular">Popular</div>
+    </div>
     <div class="label">
       <h1>{{ name }}</h1>
       <div class="label price">{{ price }}</div>
@@ -24,6 +25,7 @@
 <script setup>
 const { coffee } = defineProps(['coffee'])
 const { name, image, price, rating, votes, popular, available } = coffee
+const imageUrl = `url(${image})`
 </script>
 
 <style scoped>
@@ -37,19 +39,20 @@ article {
 }
 
 .popular {
-  position: absolute;
-  left: 1.5rem;
-  top: 1.5rem;
   background: #f6c768;
+  width: max-content;
   font-size: 0.625rem;
   font-weight: bolder;
   padding: 0.3rem 0.6rem;
   border-radius: 10px;
 }
 
-img {
-  width: 100%;
+.image-contaner {
+  padding: 0.4rem;
+  width: 260px;
+  height: 155px;
   border-radius: 5%;
+  background-image: v-bind('imageUrl');
 }
 
 h1 {
