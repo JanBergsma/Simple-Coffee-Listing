@@ -1,5 +1,5 @@
 import CoffeeCard from '@/components/CoffeeCard.vue'
-import '../assets/main.css'
+import '../assets/base.css'
 
 const coffeeBlends = [
   {
@@ -62,8 +62,7 @@ export const CoffeeCardAvailablePopular = {
     template: '<CoffeeCard v-bind="args" />'
   }),
   args: {
-    coffee: coffeeBlends[0],
-    label: 'CoffeeCard'
+    coffee: coffeeBlends[0]
   }
 }
 
@@ -76,8 +75,7 @@ export const CoffeeCardAvailableNotPopular = {
     template: '<CoffeeCard v-bind="args" />'
   }),
   args: {
-    coffee: coffeeBlends[1],
-    label: 'CoffeeCard'
+    coffee: coffeeBlends[1]
   }
 }
 
@@ -90,8 +88,7 @@ export const CoffeeCardNotAvailableNotPopular = {
     template: '<CoffeeCard v-bind="args" />'
   }),
   args: {
-    coffee: coffeeBlends[2],
-    label: 'CoffeeCard'
+    coffee: coffeeBlends[2]
   }
 }
 
