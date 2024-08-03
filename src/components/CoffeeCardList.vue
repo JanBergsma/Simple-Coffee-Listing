@@ -12,12 +12,12 @@ const { coffeeList } = defineProps(['coffeeList'])
 
 <style scoped>
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 280px);
-  grid-template-rows: repeat(auto-fit, 260px);
-  justify-content: center;
   justify-items: center;
+  display: grid;
+  justify-content: center;
   gap: 1rem;
+  grid-template-rows: repeat(auto-fit, 260px);
+  grid-template-columns: repeat(auto-fit, 280px);
   width: 100%;
 }
 </style>

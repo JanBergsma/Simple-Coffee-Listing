@@ -29,36 +29,18 @@ const imageUrl = `url(${image})`
 </script>
 
 <style scoped>
-article {
-  background: var(--bg-color-card);
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.popular {
-  background: #f6c768;
-  width: max-content;
-  font-size: 0.625rem;
+h1 {
+  font-size: 1rem;
   font-weight: bolder;
-  padding: 0.3rem 0.6rem;
-  border-radius: 10px;
+  color: var(--color-label-card);
 }
 
 .image-contaner {
-  padding: 0.4rem;
   width: 260px;
   height: 155px;
-  border-radius: 5%;
+  padding: 0.4rem;
   background-image: v-bind('imageUrl');
-}
-
-h1 {
-  color: var(--color-label-card);
-  font-weight: bolder;
-  font-size: 1rem;
+  border-radius: 5%;
 }
 
 .label {
@@ -67,22 +49,47 @@ h1 {
   align-items: center;
 }
 
+.popular {
+  width: max-content;
+  padding: 0.3rem 0.6rem;
+  background: #f6c768;
+  border-radius: 10px;
+  font-size: 0.625rem;
+  font-weight: bolder;
+}
+
 .price {
+  padding: 0.2rem 0.6rem;
   background: var(--bg-color-price);
   border-radius: 5px;
-  padding: 0.2rem 0.6rem;
   font-size: 0.75rem;
   font-weight: bolder;
 }
 
 .rating {
-  color: var(--color-label-card);
   display: flex;
-  width: 75%;
-  gap: 0.2rem;
   align-items: center;
-  font-weight: bolder;
+  gap: 0.2rem;
+  width: 75%;
   font-size: 0.875rem;
+  font-weight: bolder;
+  color: var(--color-label-card);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: fit-content;
+  height: fit-content;
+  background: var(--bg-color-card);
+}
+
+.sold-out {
+  width: fit-content;
+  font-size: 0.875rem;
+  font-weight: bolder;
+  color: var(--blend--sold-out);
 }
 
 .star {
@@ -90,15 +97,8 @@ h1 {
 }
 
 .votes {
+  font-size: 0.875rem;
+  font-weight: bolder;
   color: var(--color-votes);
-  font-weight: bolder;
-  font-size: 0.875rem;
-}
-
-.sold-out {
-  color: var(--blend--sold-out);
-  font-size: 0.875rem;
-  font-weight: bolder;
-  width: fit-content;
 }
 </style>

@@ -3,17 +3,18 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --bg-color: #111315;
+  --bg-color-btn: #1b1d1f;
+  --bg-color-btn-active: #6f757c;
   --bg-color-list-container: #1b1d1f;
   --bg-color-card: #1b1d1f;
   --bg-color-price: #bee3cc;
+  --color-btn: #fdf5e6;
   --color-header: #fdf5e6;
   --color-subheader: #6f757c;
   --color-label-card: #fdf5e6;
   --color-votes: #6f757c;
   --blend--sold-out: #ed735d;
 }
-
-
 
 *,
 *::before,
@@ -25,13 +26,13 @@
 
 html,
 body {
-  background-color: var(--bg-color);
-  background-image: url("../assets/bg-cafe.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   height: 100%;
+  background-color: var(--bg-color);
+  background-image: url('../assets/bg-cafe.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: 'DM Sans', sans-serif;
 }
 
 img {
@@ -48,7 +49,6 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-
 
 #app {
   height: 100%;
