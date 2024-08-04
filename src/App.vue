@@ -108,5 +108,6 @@ button {
   border: none;
   border-radius: 6px;
   color: var(--color-btn);
+  font-weight: bold;
 }
 </style>
